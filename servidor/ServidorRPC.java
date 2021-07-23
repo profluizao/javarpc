@@ -1,7 +1,3 @@
-//https://archive.apache.org/dist/ws/xmlrpc/apache-xmlrpc-current-bin.zip
-//javac -cp "xmlrpc-server-3.1.3.jar;xmlrpc-common-3.1.3.jar;." ServidorRPC.java
-//java -cp "xmlrpc-server-3.1.3.jar;xmlrpc-common-3.1.3.jar;ws-commons-util-1.0.2.jar;commons-logging-1.1.jar;." ServidorRPC
-
 import org.apache.xmlrpc.server.PropertyHandlerMapping;
 import org.apache.xmlrpc.server.XmlRpcServer;
 import org.apache.xmlrpc.webserver.WebServer;

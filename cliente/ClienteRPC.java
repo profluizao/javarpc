@@ -1,7 +1,3 @@
-//https://archive.apache.org/dist/ws/xmlrpc/apache-xmlrpc-current-bin.zip
-//javac -cp "xmlrpc-client-3.1.3.jar;xmlrpc-common-3.1.3.jar;." ClienteRPC.java
-//java -cp "xmlrpc-client-3.1.3.jar;xmlrpc-common-3.1.3.jar;ws-commons-util-1.0.2.jar;commons-logging-1.1.jar;." ClienteRPC
-
 import java.net.URL;
 import org.apache.xmlrpc.client.XmlRpcClient;
 import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
