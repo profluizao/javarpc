@@ -35,13 +35,13 @@ public class ClienteRPC {
 
     public int multiplicar(int x, int y) throws Exception {
         Object[] parametros = new Object[]{new Integer(x), new Integer(y)};
-        Integer resultado = (Integer) cliente.execute("Calc.multiplicao", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.multiplicacao", parametros);
         return resultado;
     }
 
     public double dividir(int x, int y) throws Exception {
         Object[] parametros = new Object[]{new Integer(x), new Integer(y)};
-        Double resultado = (Double) cliente.execute("Calc.multiplicacao", parametros);
+        Double resultado = (Double) cliente.execute("Calc.divisao", parametros);
         return resultado;
     }	
     public static void main(String[] args) throws Exception {
