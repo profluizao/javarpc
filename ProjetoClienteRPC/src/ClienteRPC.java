@@ -4,15 +4,13 @@ import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
 
 public class ClienteRPC {
 
-	//DEFINE A URL DO SERVIDOR
-    private static final String URL_SERVIDOR = "http://localhost:8185"; 
     private XmlRpcClient cliente;
 	
-    public ClienteRPC() {
+    public ClienteRPC(String urlServidor) {
 		try {
 			//configura o cliente para que ele possa se conectar ao servidor
 			XmlRpcClientConfigImpl configuracaoCliente = new XmlRpcClientConfigImpl();
-            configuracaoCliente.setServerURL(new URL(URL_SERVIDOR));
+            configuracaoCliente.setServerURL(new URL(urlServidor));
 			//seta a configuração no cliente
             cliente = new XmlRpcClient();
             cliente.setConfig(configuracaoCliente);
