@@ -1,3 +1,4 @@
+import java.net.URI;
 import java.net.URL;
 import org.apache.xmlrpc.client.XmlRpcClient;
 import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
@@ -10,7 +11,9 @@ public class ClienteRPC {
 		try {
 			//configura o cliente para que ele possa se conectar ao servidor
 			XmlRpcClientConfigImpl configuracaoCliente = new XmlRpcClientConfigImpl();
-            configuracaoCliente.setServerURL(new URL(urlServidor));
+            URL url = new URI(urlServidor).toURL();
+            configuracaoCliente.setServerURL(url);
+
 			//seta a configuração no cliente
             cliente = new XmlRpcClient();
             cliente.setConfig(configuracaoCliente);
@@ -43,10 +46,3 @@ public class ClienteRPC {
         return resultado;
     }	
 }
-
-
-
-
-
-
-
